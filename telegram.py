@@ -1,6 +1,10 @@
+import os
 pip install adafruit-io
 from Adafruit_IO import Client
-aio = Client('kattelasaikrishna', 'aio_ldck71BnIIqkX6zO5O9S6C6liJfJ')
+username = os.getenv('username')
+key = os.getenv('key')
+token=os.getenv('token')
+aio = Client(username,key)
 pip install python-telegram-bot==13.0 --quiet
 
 from telegram.ext import Updater, MessageHandler, Filters
@@ -37,7 +41,7 @@ def main(bot,update):
     demo4(bot,update)
 
 
-bot_token = '2046009698:AAErk31YPE8ujNPihuO5HTDZplbpSNk5WiU'
+bot_token = token
 u = Updater(bot_token,use_context=True)
 dp=u.dispatcher
 dp.add_handler(MessageHandler(Filters.text,main))
