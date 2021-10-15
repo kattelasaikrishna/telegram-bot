@@ -1,11 +1,11 @@
 import os
-pip install adafruit-io
+#pip install adafruit-io
 from Adafruit_IO import Client
 username = os.getenv('username')
 key = os.getenv('key')
 token=os.getenv('token')
 aio = Client(username,key)
-pip install python-telegram-bot==13.0
+#pip install python-telegram-bot==13.0
 
 from telegram.ext import Updater, MessageHandler, Filters
 
