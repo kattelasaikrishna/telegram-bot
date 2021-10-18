@@ -1,7 +1,9 @@
+import os
 #pip install adafruit-io
 from Adafruit_IO import Client
-aio = Client('kattelasaikrishna', 'aio_kgyg182zbEMreDmxD6knaatOpvAN')
-
+username_1= os.getenv('username')
+key_1= os.getenv('key')
+aio = Client(username_1,key_1)
 from telegram.ext import Updater, MessageHandler, Filters
 
 def demo1(bot,update):
@@ -35,7 +37,7 @@ def main(bot,update):
   elif a=='fans off' or a==' turn off fans' or a=='turn fans off' or a==' turn fan off ' or a=='off fan' or a=='fan off'  or a=='off fans' :
     demo4(bot,update)
 
-bot_token = '2046009698:AAErk31YPE8ujNPihuO5HTDZplbpSNk5WiU'
+bot_token = token
 u = Updater(bot_token,use_context=True)
 dp=u.dispatcher
 dp.add_handler(MessageHandler(Filters.text,main))
