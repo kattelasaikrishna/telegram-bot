@@ -28,13 +28,13 @@ def demo4(bot,update):
 
 def main(bot,update):
   a= bot.message.text.lower()
-  if a=='lights on' or a==' turn on lights' or a==' turn lights on' or a==' turn on light' or a=='on light' or a=='light on' or a=='on lights' :
+  if a=='lights on' or a=='turn on lights' or a=='turn lights on' or a=='turn on light' or a=='on light' or a=='light on' or a=='on lights' or a=='turn light on' :
     demo1(bot,update)
-  elif a=='lights off' or a==' turn off lights' or a==' turn lights off' or a==' turn off light' or a=='off light' or a=='light off' or a=='off lights' :
+  elif a=='lights off' or a=='turn off lights' or a=='turn lights off' or a=='turn off light' or a=='off light' or a=='light off' or a=='off lights' or a=='turn light off'  :
     demo2(bot,update)
-  elif a=='lights off' or a==' turn off lights' or a==' turn lights off' or a==' turn off light' or a=='off light' or a=='light off' or a=='on fans' :
+  elif a=='fans on' or a=='turn on fans' or a=='turn fans on' or a=='turn on fan' or a=='on fan' or a=='fan on' or a=='on fans' or a=='turn fan on' :
     demo3(bot,update)
-  elif a=='fans off' or a==' turn off fans' or a=='turn fans off' or a==' turn fan off ' or a=='off fan' or a=='fan off'  or a=='off fans' :
+  elif a=='fans off' or a=='turn off fans' or a=='turn fans off' or a=='turn off fan' or a=='off fan' or a=='fan off' or a=='off fans' or a=='turn fan off' :
     demo4(bot,update)
 
 bot_token ='2046009698:AAErk31YPE8ujNPihuO5HTDZplbpSNk5WiU'
