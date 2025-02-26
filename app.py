@@ -15,7 +15,7 @@ def demo2(bot,update):
   chat_id=bot.message.chat_id
   bot.message.reply_text('Turning off the Light')
   aio.send('light',0)
-
+  
 def demo3(bot,update):
   chat_id=bot.message.chat_id
   bot.message.reply_text('Turning on the Fan')
